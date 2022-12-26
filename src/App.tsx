@@ -5,6 +5,7 @@ import { fetchEstados } from "./features/localidades/estados";
 import { fetchMunicipios } from "./features/localidades/municipios";
 import { fetchMunicipioInfo } from "./features/localidades/municipiosInfo";
 import { useAppSelector } from "./features/hooks/useAppSelector";
+import './App.css'
 
 export default function App() {
   const estadosState = useAppSelector((state) => state.estados);
@@ -71,10 +72,10 @@ export default function App() {
         municipioInfos.municipio.map(
           ({ microrregiao, "regiao-imediata": regiaoImediata }) => (
             <>
-              <h1>Microrregião: {microrregiao.nome}</h1> 
-              <h1>Região Imediata: {regiaoImediata.nome}</h1>
-              <h1>Mesorregiao: {microrregiao.mesorregiao.nome}</h1> 
-              <h1>Estado: {microrregiao.mesorregiao.UF.nome}</h1>
+              <h2>Microrregião: {microrregiao.nome}</h2> 
+              <h2>Região Imediata: {regiaoImediata.nome}</h2>
+              <h2>Mesorregiao: {microrregiao.mesorregiao.nome}</h2> 
+              <h2>Estado: {microrregiao.mesorregiao.UF.nome}</h2>
             </>
           )
         )
