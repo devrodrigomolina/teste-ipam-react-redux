@@ -1,4 +1,4 @@
-import { configureStore } from '@reduxjs/toolkit/dist/configureStore'
+import { configureStore } from '@reduxjs/toolkit'
 import estadosReducer from '../features/localidades/estados'
 import municipiosReducer from '../features/localidades/municipios'
 import municipioInfoReducer from '../features/localidades/municipiosInfo'
