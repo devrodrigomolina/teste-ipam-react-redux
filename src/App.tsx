@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "./store/store";
 import { fetchEstados } from "./features/localidades/estados";
 import { fetchMunicipios } from "./features/localidades/municipios";
-import { fetchMunicipioInfo } from "./features/localidades/municipioInfo";
+import { fetchMunicipioInfo } from "./features/localidades/municipiosInfo";
 import { useAppSelector } from "./features/hooks/useAppSelector";
 
 export default function App() {
