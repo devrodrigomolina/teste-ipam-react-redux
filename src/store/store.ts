@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit/dist/configureStore'
 import estadosReducer from '../features/localidades/estados'
+import municipiosReducer from '../features/localidades/municipios'
 
 export const store = configureStore({
   reducer: {
-    estados: estadosReducer
+    estados: estadosReducer,
+    municipios: municipiosReducer
   },
 })
 
